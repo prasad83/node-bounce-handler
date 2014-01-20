@@ -1,17 +1,15 @@
+NodeJS Bounce Handler
+=====================
+Port of (PHP-Bounce-Handler - https://github.com/cfortune/PHP-Bounce-Handler v7.3) in NodeJS.
+
 Usage
 =====
 
-  ```javascript```
+  ```javascript
   var BounceHandler = require('node-bounce-handler').BounceHandler;
-
   var bh = new BounceHandler();
-  var bounceResult = bh.parse\_email(emlDataString);
-
-
-NodeJS Bounce Handler
-=====================
-Ported (PHP-Bounce-Handler - https://github.com/cfortune/PHP-Bounce-Handler v7.3) code
-to NodeJS.
+  var bounceResult = bh.parse_email(emlDataString);
+  ```
 
 About PHP-Bounce-Handler
 ========================
