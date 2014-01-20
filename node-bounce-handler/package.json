@@ -1,0 +1,38 @@
+{
+  "name": "node-bounce-handler",
+  "description": "Parse email bounce notification messages",
+  "main": "./lib/bouncehandler",
+  "author": {
+    "name": "Prasad"
+  },
+  "version": "0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prasad83/node-bounce-handler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prasad83/node-bounce-handler/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/prasad83/node-bounce-handler/raw/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+
+  },
+  "jam": {
+    "main": "lib/bouncehandler.js",
+    "include": [
+      "lib/bouncehandler.js",
+      "lib/responses.js",
+      "lib/rfc1893-error-codes.js",
+      "README.md",
+      "LICENSE"
+    ]
+  },
+  "dependencies": {
+    "mimelib": "0.2.x"
+  }
+}
