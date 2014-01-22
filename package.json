@@ -20,7 +20,7 @@
     }
   ],
   "devDependencies": {
-
+    "mimelib": "0.2.x"
   },
   "jam": {
     "main": "lib/bouncehandler.js",
