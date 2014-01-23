@@ -1,3 +1,4 @@
 /node_modules
 /dist
 /repackage.sh
+/npm-debug.log
