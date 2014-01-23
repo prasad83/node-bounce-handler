@@ -18,9 +18,12 @@ if (argv.length == 1) {
 			if (res[0] && typeof res[0]['status'] != 'string') {	
 				console.log('-- ' + files[index] + ' -- PARSE ERR');
 				console.log(res);
+			} else if (!res[0]['messageid']) {
+				console.log('-- ' + files[index] + ' -- PARSE ERR (messageid)');
+				console.log(res); 
 			} else {
-				console.log(util.format('-- ' + files[index] + ' -- PARSE OK [%s, %s, %s]', 
-					res[0]['status'], res[0]['action'], res[0]['recipient']));
+				console.log(util.format('-- ' + files[index] + ' -- PARSE OK [%s, %s, %s, %s]', 
+					res[0]['status'], res[0]['action'], res[0]['recipient'], res[0]['messageid']));
 			}
 		}
 	});
